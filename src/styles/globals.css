@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.layout__container {
+  @apply flex flex-col min-h-screen pt-[64px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.navBar {
+  @apply flex justify-between items-center fixed top-0 w-full h-16 bg-gray-800 text-white;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.navBar__logo {
+  @apply font-bold text-lg text-yellow-400 cursor-pointer px-4 py-0;
+}
+
+.navBar__menu {
+  @apply flex gap-4 items-center px-4 py-0;
+}
+
+.navBar__item {
+  @apply cursor-pointer;
+}
+
+.navBar__item:hover {
+  @apply text-yellow-100;
+}
+
+.navBar__button__mobile {
+  @apply hidden;
 }
