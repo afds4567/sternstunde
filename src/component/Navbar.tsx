@@ -9,7 +9,9 @@ export default function Navbar() {
   return (
     <>
       <div className="navBar">
-        <div className="navBar__logo">STERNSTUNDE</div>
+        <Link className="navBar__logo" href="/">
+          STERNSTUNDE
+        </Link>
         <div className="navBar__menu">
           <Link className="navBar__item" href="/places">
             List

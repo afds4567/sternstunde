@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .layout__container {
-  @apply flex flex-col min-h-screen pt-[64px];
+  @apply flex flex-col pt-[64px];
 }
 
 .navBar {
@@ -36,7 +36,7 @@
   }
 
   .navBar__mobile {
-    @apply fixed top-[64px] w-full gap-4 items-center px-4 pb-2 bg-gray-800;
+    @apply fixed top-[64px] w-full gap-4 items-center px-4 pb-2 bg-gray-800 z-10;
   }
 
   .navBar__menu__mobile {
