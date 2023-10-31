@@ -29,3 +29,25 @@
 .navBar__button__mobile {
   @apply hidden;
 }
+
+@media only screen and (max-width: 768px) {
+  .navBar__menu {
+    @apply hidden;
+  }
+
+  .navBar__mobile {
+    @apply fixed top-[64px] w-full gap-4 items-center px-4 pb-2 bg-gray-800;
+  }
+
+  .navBar__menu__mobile {
+    @apply flex flex-col items-center;
+  }
+
+  .navBar__item__mobile {
+    @apply cursor-pointer text-white;
+  }
+
+  .navBar__button__mobile {
+    @apply block px-4 py-0;
+  }
+}
