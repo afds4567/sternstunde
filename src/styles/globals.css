@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .layout__container {
-  @apply flex flex-col pt-[64px];
+  @apply pt-[64px] h-screen;
 }
 
 .navBar {

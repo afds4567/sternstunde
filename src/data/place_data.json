@@ -2,16 +2,19 @@
   "DATA": [
     {
       "creator": "eyk",
+      "name": "위치정보1",
       "lat": 37.7749295,
       "lng": 127.4194155
     },
     {
       "creator": "eyk",
+      "name": "위치정보2",
       "lat": 38.142,
       "lng": 127.423
     },
     {
       "creator": "eyk",
+      "name": "위치정보3",
       "lat": 37.933,
       "lng": 127.992
     }
