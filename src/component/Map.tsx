@@ -24,5 +24,11 @@ export default function Map({ setMap }: MapProps) {
     loadMap();
   }, []);
 
-  return <div ref={mapRef} className="w-full h-[calc(100vh-64px)]"></div>;
+  return (
+    <div
+      ref={mapRef}
+      className="fixed w-full bg-yellow-300"
+      style={{ height: "calc(100vh - 64px)" }}
+    ></div>
+  );
 }
