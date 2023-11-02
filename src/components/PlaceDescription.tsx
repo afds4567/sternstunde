@@ -11,7 +11,6 @@ export default function PlaceDescription({
   place,
   setPlace,
 }: PlaceDescriptionProps) {
-  console.log(place);
   return (
     <div className="fixed transition ease-in-out delay-200 inset-x-0 mx-auto bottom-10 rounded-lg z-10 w-11/12 bg-slate-50 ">
       {place && (
