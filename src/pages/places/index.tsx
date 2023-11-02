@@ -28,12 +28,21 @@ export default function PlaceListPage({
   );
 }
 export async function getStaticProps() {
-  const cityDatas = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/cities`
-  ).then((res) => res.json());
-  return {
-    props: {
-      cityDatas,
-    },
-  };
+  try {
+    const cityDatas = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/cities`
+    ).then((res) => res.json());
+    return {
+      props: {
+        cityDatas,
+      },
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      props: {
+        cityDatas: [],
+      },
+    };
+  }
 }
