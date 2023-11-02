@@ -1,5 +1,4 @@
 import { useState } from "react";
-import * as places from "@/data/place_data.json";
 import Markers from "@/components/Markers";
 import Map from "@/components/Map";
 import PlaceDescription from "@/components/PlaceDescription";
@@ -10,11 +9,9 @@ declare global {
   }
 }
 
-export default function Home() {
+export default function Home({ placeDatas }: any) {
   const [map, setMap] = useState(null);
-  const placeDatas = places.DATA;
   const [currentPlace, setCurrentPlace] = useState(null);
-  console.log(map, "MAPHOME");
   return (
     <>
       <Map setMap={setMap} />
@@ -26,4 +23,16 @@ export default function Home() {
       <PlaceDescription place={currentPlace} setPlace={setCurrentPlace} />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const placeDatas = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/places`
+  ).then((res) => res.json());
+  return {
+    props: {
+      placeDatas,
+    },
+    revalidate: 60,
+  };
 }

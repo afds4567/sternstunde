@@ -23,7 +23,7 @@ export default function PlaceDescription({
             alt="icon image"
           />
           <div className="flex justify-between items-start w-full">
-            <div className="font-semibold">{place.name}</div>
+            <div className="font-semibold">{place.admin_name}</div>
             <button type="button" onClick={() => setPlace(null)}>
               <AiOutlineClose />
             </button>
