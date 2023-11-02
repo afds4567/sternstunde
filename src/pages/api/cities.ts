@@ -18,7 +18,11 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<CityData[]>
 ) {
-  const data = (await import("../../data/city_data.json"))["DATA"];
+  try {
+    const data = (await import("../../data/city_data.json"))["DATA"];
 
-  return res.status(200).json(data);
+    return res.status(200).json(data);
+  } catch (error) {
+    console.error(error);
+  }
 }
