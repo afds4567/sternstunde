@@ -27,7 +27,7 @@ export default function PlaceListPage({
     </div>
   );
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const cityDatas = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/api/cities`
@@ -39,10 +39,6 @@ export async function getStaticProps() {
     };
   } catch (e) {
     console.log(e);
-    return {
-      props: {
-        cityDatas: [],
-      },
-    };
+    return;
   }
 }

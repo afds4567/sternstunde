@@ -25,23 +25,13 @@ export default function Home({ placeDatas }: any) {
   );
 }
 
-export async function getStaticProps() {
-  try {
-    const placeDatas = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/places`
-    ).then((res) => res.json());
-    return {
-      props: {
-        placeDatas,
-      },
-      revalidate: 60,
-    };
-  } catch (e) {
-    console.log(e);
-    return {
-      props: {
-        placeDatas: [],
-      },
-    };
-  }
+export async function getServerSideProps() {
+  const placeDatas = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/places`
+  ).then((res) => res.json());
+  return {
+    props: {
+      placeDatas,
+    },
+  };
 }
