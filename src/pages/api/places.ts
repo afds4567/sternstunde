@@ -13,9 +13,13 @@ interface Data {
   imgURL?: string | null;
 }
 
+interface Error {
+  error: string;
+}
+
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data[]>
+  res: NextApiResponse<Data[] | Error>
 ) {
   try {
     const prisma = new PrismaClient();
@@ -23,5 +27,6 @@ export default async function handler(
     return res.status(200).json(places);
   } catch (error) {
     console.error(error);
+    res.status(500).json({ error: "An error occurred while fetching data." });
   }
 }
