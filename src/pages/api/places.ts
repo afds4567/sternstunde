@@ -1,10 +1,16 @@
+import { PrismaClient } from "@prisma/client";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 interface Data {
-  creator: string;
-  name: string;
-  lat: number;
-  lng: number;
+  id: number;
+  creator: string | null;
+  name: string | null;
+  address?: string | null;
+  lat: string | null;
+  lng: string | null;
+  category?: string | null;
+  description?: string | null;
+  imgURL?: string | null;
 }
 
 export default async function handler(
@@ -12,9 +18,9 @@ export default async function handler(
   res: NextApiResponse<Data[]>
 ) {
   try {
-    const data = (await import("../../data/place_data.json"))["DATA"];
-
-    return res.status(200).json(data);
+    const prisma = new PrismaClient();
+    const places = await prisma.place.findMany();
+    return res.status(200).json(places);
   } catch (error) {
     console.error(error);
   }
