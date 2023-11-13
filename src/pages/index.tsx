@@ -25,7 +25,7 @@ export default function Home({ placeDatas }: any) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const placeDatas = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/places`
   ).then((res) => res.json());
@@ -33,6 +33,5 @@ export async function getStaticProps() {
     props: {
       placeDatas,
     },
-    revalidate: 60,
   };
 }
