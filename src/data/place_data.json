@@ -2,21 +2,102 @@
   "DATA": [
     {
       "creator": "eyk",
-      "name": "위치정보1",
-      "lat": 37.7749295,
-      "lng": 127.4194155
+      "name": "金富士(kinfuji)",
+      "category": "Yakitori",
+      "lat": "43.05458",
+      "lng": "141.35449",
+      "description": "Yakidori, which is usually visited by locals.Affordable price and comparable taste.",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/babef181-ee3f-440d-a458-1db774f3ae9d/image.jpeg"
     },
     {
       "creator": "eyk",
-      "name": "위치정보2",
-      "lat": 38.142,
-      "lng": 127.423
+      "name": "うどんのそうまや(Soumaya)",
+      "category": "Udon",
+      "lat": "43.05936",
+      "lng": "141.34978",
+      "description": "Both the shrimp tempura udon and tofu pouch udon have noodles that are supple and chewy. The broth isn't too salty and overall, they were the best udon dishes I've ever eaten.",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/6826368a-706b-4727-8ec0-ffa1da599f3e/image.jpeg"
     },
     {
       "creator": "eyk",
-      "name": "위치정보3",
-      "lat": 37.933,
-      "lng": 127.992
+      "name": "アジアンバーラマイ(Ramai)",
+      "category": "Soup Curry",
+      "lat": "43.10208",
+      "lng": "141.34763",
+      "description": "It's my first time trying curry soup, and it's so good that I don't think I need to try it anywhere else!",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/5c84b095-a370-44be-90e4-2c8f15451c10/image.jpeg"
+    },
+    {
+      "creator": "eyk",
+      "name": "下総屋食堂(Shimofusa-ya Shokudō)",
+      "category": "Japanese-meal",
+      "lat": "35.69860",
+      "lng": "139.79337",
+      "description": "A Japanese meal set restaurant that has been since 1932. It offers a nostalgic taste and atmosphere, along with surprisingly affordable prices. It's a place that I always want to stay just as it is",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/4cd54d95-1f2d-4d68-8d1a-26fc750be8f2/image.jpeg"
+    },
+    {
+      "creator": "eyk",
+      "name": "麺 みつヰ(Men Mitsuwi)",
+      "category": "Ramen",
+      "lat": "35.70968",
+      "lng": "139.79036",
+      "description": "A unique style of chashu and noodles. The chashu comes in three different varieties, wasn't greasy at all and its smoked flavor was really clean, pairing perfectly with the soup",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/2ddab345-28e2-492c-9f9d-8a0515c04de6/image.jpeg"
+    },
+    {
+      "creator": "eyk",
+      "name": "豚丼名人(Butadon Meijin)",
+      "category": "Butadon",
+      "lat": "42.78783",
+      "lng": "141.68066",
+      "description": "Best Butadon Ever",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/36be9f91-0d87-4a1f-a0cf-8ddbae2d63b6/image.jpeg"
+    },
+    {
+      "creator": "eyk",
+      "name": "台東古早味寶桑豆花",
+      "category": "Dessert",
+      "lat": "22.75164",
+      "lng": "121.15265",
+      "description": "cheap and tasty 豆花(tofu-pudding)",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/2f2027bd-973e-4f8b-9ddc-48f942718db2/image.jpeg"
+    },
+    {
+      "creator": "eyk",
+      "name": "早點來早餐店(ZaoDian Lai)",
+      "category": "Breakfast(蛋餅)",
+      "lat": "22.75542",
+      "lng": "121.14944",
+      "description": "representative breakfast dish(蛋餅) with a tradition of 40 years resulting in a crispy exterior and a soft interior",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/811576db-104e-494a-820e-85c388500a53/image.jpeg"
+    },
+    {
+      "crator": "eyk",
+      "name": "大智路蕭爌肉飯",
+      "category": "braised pork(肉飯)",
+      "lat": "24.13255",
+      "lng": "120.69000",
+      "description": "famous pork rice bowl(肉飯) in Taichung, offering delicious sauce, braised pork, and side dishes.",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/1d84eeb9-c412-42e0-9b82-90b5f888e9ec/image.jpeg"
+    },
+    {
+      "creator": "eyk",
+      "name": "小魏川菜餐廳(Xiao Wei Chuancai)",
+      "category": "Szechuan-food",
+      "lat": "25.04572",
+      "lng": "121.51735",
+      "description": "Szechuan restaurant near the main station in Taipei that is frequently visited by locals.",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/93c4bf1c-a3e9-4b98-a9ac-7da93da22bee/image.png"
+    },
+    {
+      "creator": "eyk",
+      "name": "馬辣頂級麻辣鴛鴦火鍋",
+      "category": "Hotpot",
+      "lat": "25.04348",
+      "lng": "121.50621",
+      "description": "Hotpot restaurant famous for Unlimited and Dessert with reasonable price(800-900TWD).",
+      "imgURL": "https://velog.velcdn.com/images/afds4567/post/ecc088ae-893a-409d-8a19-e449af66f3ab/image.png"
     }
   ]
 }
