@@ -11,7 +11,7 @@ export default function Map({ setMap }: MapProps) {
     if (!window.google || !window.google.maps) return;
     const map = new window.google.maps.Map(mapRef.current, {
       center: { lat: 37.397, lng: 127.644 },
-      zoom: 8,
+      zoom: 3,
       zoomControl: false,
       mapTypeControl: false,
       streetViewControl: false,
