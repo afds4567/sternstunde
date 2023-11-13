@@ -27,7 +27,7 @@ export default function PlaceListPage({
     </div>
   );
 }
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const cityDatas = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/api/cities`
@@ -36,6 +36,7 @@ export async function getServerSideProps() {
       props: {
         cityDatas,
       },
+      revalidate: 60,
     };
   } catch (e) {
     console.log(e);
