@@ -16,6 +16,9 @@ export default function Map({ setMap }: MapProps) {
       mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: false,
+      rotateControl: false,
+      clickableIcons: false,
+      gestureHandling: "greedy",
     });
     setMap(map);
   };
